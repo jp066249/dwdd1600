@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Guitar Making & Playing: Home</title>
+        <meta name="viewport" content="width=device=width, initial-scale=1">
+        <!--Description to come up with-->
+        <meta name="description" content="Learn about guitars and how to play them">
+        <meta name="author" content="Josue Pedroza">
+        <link rel="stylesheet" href="guitar.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <header>
+            <h1>Guitar Making & Playing</h1>
+            <!--Come up with something short (one sentence)-->
+            <p>Learn basic instrument background & concepts</p>
+
+        </header>
+        <nav>
+            <ul>
+                <!--Between both <a>, something-->
+                <li><a href="index.html">Origin of the Guitar</a></li>
+                <li><a href="acoustic.html">All About Acoustic Guitars</a></li>
+                <li><a href="images.html">Guitar Types</a></li>
+                <li class="active"><a href="delivery.html">Request a Guitar</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>Request a Delivery</h1>
+
+            <form method="get" class="myForm" action="thanks.html">
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label>First Name*<input type="text" name="fname" required></label>
+                    <label>Last Name*<input type="text" name="lname" required></label>
+                    <label>Cell Number*<input type="tel" name="phone" required placeholder="987-555-1234"></label>
+                    <label>Email*<input type="email" name="email" required></label>
+                </fieldset>
+
+                <fieldset>
+                <legend>Delivery Method</legend>
+                    <label><input type="radio" name="method" value="drone"> Drone Delivery (2hrs)</label>
+                    <label><input type="radio" name="method" value="cycle"> Motorcycle (4hrs)</label>
+                    <label><input type="radio" name="method" value="robot"> Robot Delivery (6hrs)</label>
+                </fieldset>
+
+                <fieldset>Product Options
+                    <label><input type="checkbox" name="r-&-b" value="chosen">Renaissance & Baroque</label>
+                    <label><input type="checkbox" name="classical" value="chosen">Classical</label>
+                    <label><input type="checkbox" name="f-t" value="chosen">Flat-top</label>
+                    <label><input type="checkbox" name="steel-string" value="chosen">Steel-String Guitar</label>
+                    <label><input type="checkbox" name="twelve-string" value="chosen">Twelve-String</label>
+                    <label><input type="checkbox" name="ac-bass" value="chosen">Acoustic Bass</label>
+                    <label><input type="checkbox" name="seven-&-eight" value="chosen">Seven-string & Eight-string</label>
+                    <label><input type="checkbox" name="elec-bass" value="chosen">Electic Bass</label>
+
+                    <label>Preferred Delivery Time
+                    <select name="time">
+                        <option value="none">Please Select</option>
+                        <option value="morning">Between 7:00 am and 11:00 am</option>
+                        <option value="noon">Between 11:00 am and 2:00 pm</option>
+                        <option value="afternoon">Between 2:00 pm and 5:00 pm</option>
+                        <option value="evening">Between 5:00 pm and 8:00 pm</option>
+                    </select>
+                    </label>
+                </fieldset>
+
+                <label>Comments
+                    <textarea name="comments"></textarea>
+                </label>
+
+
+
+                <input type="submit" value="Send Delivery Request">
+            </form>
+
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 &bull; Josue Pedroza &bull; <a href="mailto:josuepedroza16@gmail.com">Email Us</a></p>
+        </footer>
+
+    </body>
+
+</html>
