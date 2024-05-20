@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Vacay Today</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Josue Pedroza">
+        <link rel="stylesheet" href="vacation.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Sedgwick+Ave&display=swap" rel="stylesheet">       
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Oxygen:wght@300;400;700&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!--Image Logo-->
+            <img src="logo.png" alt="site logo" width="100" height="96">
+
+            <!--Put a website title-->
+            <div>
+                <h1>Vacay Today</h1>
+
+                <!--Put a slogan-->
+                <p>Want a Getaway? Vacay Today!</p>
+            </div>
+
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Discover</a></li>
+                <li><a href="gallery.html">Destinations</a></li>
+                <li><a href="video.html">Benefits</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li class="active"><a href="contact_page.html">Place Order</a></li>
+            </ul>
+        </nav>
+
+        <main>
+           <h1>Place Order</h1>
+           <form method="get" class="myForm" action="thanks.html">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Middle Initial (Optional)<input type="text" name="fname"></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Cell Number*<input type="tel" name="phone" required placeholder="987-555-1234"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Package Destination</legend>
+                    <label>Package
+                        <select name="package">
+                            <option value="none">Please Select</option>
+                            <option value="BR">Rio de Janeiro (During Carnaval!)</option>
+                            <option value="UAE">Luxury Dubai Experience</option>
+                            <option value="Israel">Historical Journey to Jerusalem</option>
+                        </select>
+                    </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Travel Year</legend>
+                    <label><input type="radio" name="year" value="2024"> 2024</label>
+                    <label><input type="radio" name="year" value="2025"> 2025</label>
+                    <label><input type="radio" name="year" value="2026"> 2026</label>
+                </fieldset>
+
+
+
+
+
+
+            <label>Comments
+                <textarea name="comments"></textarea>
+            </label>
+
+            <input type="submit" value="Place Order">
+            </form>
+
+
+        </main>
+
+        <footer>
+            <p>&copy; 2024 &bull; Josue Pedroza &bull; <a href="mailto:josuepedroza16@gmail.com">Email Us</a></p>
+        </footer>
+
+    </body>
+
+</html>
